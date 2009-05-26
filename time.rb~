@@ -1,6 +1,3 @@
-# Take a time as input (24 hour) and print out an analog clock face representing that time
-
-
 def d n,c;print" "*[8,4,7,1,13,0,15,1,13,4,7,8][n];n%2==1?print(c):(puts c;puts if(1..9)===n)end
 v,m=[0,1,3,5,7,9,11,10,8,6,4,2,0],{};h=v.reverse;v.inject(60){|a,t| m[a]=t;a-=5}
 x,y=gets.split(":").map{|z|z.to_i};y-=(y%5);x-=12 if x>12
